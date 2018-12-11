@@ -1,0 +1,48 @@
+
+#container {
+    margin: auto;
+    align-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+
+#options-container, #results-container {
+    border: solid black 1px;
+    width: 60%;
+    margin: auto;
+    padding: 1%;
+}
+
+#options-container h2, #results-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#options-container p, #results-container div {
+    float: left;
+    width: 30%;
+    height: 110px;
+    border: solid black;
+    margin: 1%;
+}
+
+#options-container p:hover, #results-container div:hover {
+    cursor: pointer;
+}
+
+#container::after, #options::after, #results-container::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.highlight-selection {
+    border: solid red 1px;
+}
+
+button {
+    margin: auto;
+}
