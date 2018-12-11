@@ -8,7 +8,6 @@ header {
     text-align: center;
 }
 
-
 #options-container, #results-container {
     border: solid black 1px;
     width: 60%;
@@ -27,9 +26,40 @@ header {
     height: 110px;
     border: solid black;
     margin: 1%;
+    font-weight: bold;
 }
 
-#options-container p:hover, #results-container div:hover {
+.rock-background {
+    background-color: lightgray;
+    background-image: url("assets/rock.png");
+    background-size:     contain;
+    background-repeat:   no-repeat;
+    background-position: center;
+}
+.paper-background{
+    background-color: lightgoldenrodyellow;
+    background-image: url("assets/paper.png");
+    background-size:     contain;
+    background-repeat:   no-repeat;
+    background-position: top;
+}
+.scissors-background {
+    background-color: lightskyblue;
+    background-image: url("assets/scissors.png");
+    background-size:     contain;
+    background-repeat:   no-repeat;
+    background-position: top;
+}
+
+#result{
+    background-image: url("assets/trophy.jpeg");
+    background-size:     contain;
+    background-repeat:   no-repeat;
+    background-position: top;
+    font-size: x-large;
+}
+
+#options-container p:hover {
     cursor: pointer;
 }
 
@@ -39,10 +69,8 @@ header {
     clear: both;
 }
 
-.highlight-selection {
-    border: solid red 1px;
+.highlighted {
+    border: solid red !important;
+    box-shadow: inset 0 0 10px #000000;
 }
 
-button {
-    margin: auto;
-}
